@@ -23,7 +23,7 @@ g = ggplot(data.frame(tot),aes(x= tot)) + geom_bar(binwidth = 2500)
 g + labs(x = "Total steps per day", y = "Count", title = "Histogram of Total Steps per Day")
 ```
 
-![](Assessment_1_files/figure-html/part2-1.png) 
+![](PA1_template_files/figure-html/part2-1.png) 
 
 ```r
 m = mean(tot, na.rm=TRUE)
@@ -57,7 +57,7 @@ g = ggplot(data = avg,aes(x= avg$tim,y = avg$average)) + geom_line()
 g + labs(x = "Time interval", y = "Average number of Steps Taken", title = "Average daily activity pattern")
 ```
 
-![](Assessment_1_files/figure-html/part3-1.png) 
+![](PA1_template_files/figure-html/part3-1.png) 
 
 ```r
 x=which.max(avg$average)
@@ -99,7 +99,7 @@ g = ggplot(data.frame(tot),aes(x= tot)) + geom_bar(binwidth = 2500)
 g + labs(x = "Total steps per day", y = "Count", title = "Histogram of Total Steps per Day")
 ```
 
-![](Assessment_1_files/figure-html/part4-1.png) 
+![](PA1_template_files/figure-html/part4-1.png) 
 
 ```r
 m = mean(tot, na.rm=TRUE)
@@ -144,4 +144,4 @@ g = ggplot(data = avg,aes(x= avg$tim,y = avg$average)) + geom_line() + facet_wra
 g + labs(x = "Time interval", y = "Average number of Steps Taken", title = "Average Daily Activity Pattern")
 ```
 
-![](Assessment_1_files/figure-html/part5-1.png) 
+![](PA1_template_files/figure-html/part5-1.png) 
